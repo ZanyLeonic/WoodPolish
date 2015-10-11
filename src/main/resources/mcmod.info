@@ -1,0 +1,16 @@
+[
+{
+  "modid": "polishedwood",
+  "name": "Polished Wood",
+  "description": "A mod that adds polished wood to Minecraft.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ZanyLeonic"],
+  "credits": "Code and Textures created by Leo 2015. Rights to their respective owners.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

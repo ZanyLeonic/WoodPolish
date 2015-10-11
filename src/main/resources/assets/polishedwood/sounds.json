@@ -1,0 +1,11 @@
+{
+    "actions.spray": {
+        "category": "actions",
+        "sounds": [
+            {
+                "name": "spray",
+                "stream": false
+            }
+        ]
+    }
+}
