@@ -1,6 +1,6 @@
 {
-    "actions.spray": {
-        "category": "actions",
+    "player.spray": {
+        "category": "player",
         "sounds": [
             {
                 "name": "spray",

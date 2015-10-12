@@ -3,6 +3,7 @@
  */
 package com.leonic.polishedwood;
 
+import com.leonic.polishedwood.init.PolishedBlocks;
 import com.leonic.polishedwood.proxies.CommonProxy;
 
 import cpw.mods.fml.common.Mod;
@@ -12,6 +13,10 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
 
@@ -30,6 +35,15 @@ public class Polished {
 	@Instance(References.MODID)
 	public static Polished instance;
 	
+	//Custom creative tab
+	public static CreativeTabs Polished = new CreativeTabs("PolishedWoodMod")
+	{
+		public Item getTabIconItem()
+		{
+			return Items.clock;
+		}
+	};
+		
 	 @EventHandler
 	    public void preInit(FMLPreInitializationEvent event)
 	    {	
@@ -52,6 +66,8 @@ public class Polished {
 	    	
 	    	config.setCategoryRequiresMcRestart("UPDATE_OPTIONS", true);
 	    	
+	    	//Blocks, Items and Recipes
+	    	PolishedBlocks.registerBlocks();
 	    }
 	 
 	 @EventHandler
